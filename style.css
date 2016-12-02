@@ -33,13 +33,13 @@ h1 {
    background-color: black;
 }
 
-.content p {
-  text-align: justify;
-}
-
 .content {
 	font-size: 14px;
 	line-height: 1.5em;
+}
+
+.content p {
+  text-align: justify;
 }
 
 .footer {

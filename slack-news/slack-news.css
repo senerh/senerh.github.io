@@ -1,0 +1,13 @@
+.slack-news article {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.slack-news h4 {
+  display: inline;
+}
+
+.slack-news time {
+  padding-left: 5px;
+	font-size: 12px;
+	color: #bbb;
+}
