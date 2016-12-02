@@ -23,8 +23,8 @@ $.fn.extend({
           date = d.getMonth() + 1 + "/" + d.getDate() + "/" + d.getFullYear();
 
           html += "<article class=\"slack-news\">";
-          html += "<h4 class=\"slack-news\">" + title + "</h4>";
-          html += "<time class=\"slack-news\">" + date + "</time>";
+          html += "<h4>" + title + "</h4>";
+          html += "<time>" + date + "</time>";
           html += "<p>" + body + "</p>";
           html += "</article>";
         });
