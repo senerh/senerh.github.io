@@ -42,7 +42,8 @@
   padding-left: 20px;
 }
 
-.resume-about .glyphicon {
+.resume-about .fa {
+  width: 12px;
   margin-right: 10px;
 }
 
