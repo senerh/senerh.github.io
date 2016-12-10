@@ -1,0 +1,67 @@
+.resume-header {
+  background-color: #0F243E;
+  border-radius: 0px 0px 0px 200px;
+}
+
+.resume-header h1 {
+  color: white;
+}
+
+.resume-header p {
+  color: white;
+  text-align: center;
+}
+
+.resume-pdf {
+  float: right;
+  color: white;
+}
+
+.resume-photo {
+  padding-top: 20px;
+}
+
+.resume-photo img {
+  position: relative;
+  width: 100%;
+  border-radius: 50%;
+  border: 1px solid white;
+}
+
+.resume-body {
+  margin-top: 10px;
+}
+
+.resume-block {
+  margin: 5px;
+  border-bottom: 2px dotted #497DBA;
+}
+
+.resume-about ul {
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+.resume-about .glyphicon {
+  margin-right: 10px;
+}
+
+.resume-timeline {
+  list-style-type: none;
+  margin-left: 10px;
+  padding: 0px;
+  border-left: 3px solid #497DBA;
+}
+
+.resume-timeline li {
+  margin-left: -10px;
+  margin-bottom: 20px;
+  padding-left: 30px;
+  background: url(bullet.png) no-repeat 0 0.4em;
+  color: #0F243E;
+}
+
+.resume-date {
+  margin-top: -0.5em;
+  font-size: 12px;
+}
