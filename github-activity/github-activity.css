@@ -1,0 +1,15 @@
+@import 'github-activity-0.1.4.min.css';
+
+.gha-feed {
+    font-family: inherit;
+    border: none;
+    margin-bottom: 5px;
+}
+
+.gha-activity {
+    border-bottom: 2px dotted #497DBA;
+}
+
+.gha-activity-icon .octicon {
+    color: #0F243E;
+}

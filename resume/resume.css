@@ -1,68 +1,72 @@
 .resume-header {
-  background-color: #0F243E;
-  border-radius: 0px 0px 0px 200px;
+    background-color: #0F243E;
+    border-radius: 0px 0px 0px 200px;
 }
 
 .resume-header h1 {
-  color: white;
+    color: white;
 }
 
 .resume-header p {
-  color: white;
-  text-align: center;
+    color: white;
+    text-align: center;
 }
 
 .resume-pdf {
-  float: right;
-  color: white;
+    float: right;
+    color: white;
+}
+
+.resume-pdf .fa-arrow-circle-down {
+    color: #4caf50;
 }
 
 .resume-photo {
-  padding-top: 20px;
+    padding-top: 20px;
 }
 
 .resume-photo img {
-  position: relative;
-  width: 100%;
-  border-radius: 50%;
-  border: 1px solid white;
+    position: relative;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid white;
 }
 
 .resume-body {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .resume-block {
-  margin: 5px;
-  border-bottom: 2px dotted #497DBA;
+    margin: 5px;
+    border-bottom: 2px dotted #497DBA;
 }
 
 .resume-about ul {
-  list-style-type: none;
-  padding-left: 20px;
+    list-style-type: none;
+    padding-left: 20px;
 }
 
 .resume-about .fa {
-  width: 12px;
-  margin-right: 10px;
+    width: 12px;
+    margin-right: 10px;
 }
 
 .resume-timeline {
-  list-style-type: none;
-  margin-left: 10px;
-  padding: 0px;
-  border-left: 3px solid #497DBA;
+    list-style-type: none;
+    margin-left: 10px;
+    padding: 0px;
+    border-left: 3px solid #497DBA;
 }
 
 .resume-timeline li {
-  margin-left: -10px;
-  margin-bottom: 20px;
-  padding-left: 30px;
-  background: url(bullet.png) no-repeat 0 0.4em;
-  color: #0F243E;
+    margin-left: -10px;
+    margin-bottom: 20px;
+    padding-left: 30px;
+    background: url(bullet.png) no-repeat 0 0.4em;
+    color: #0F243E;
 }
 
 .resume-date {
-  margin-top: -0.5em;
-  font-size: 12px;
+    margin-top: -0.5em;
+    font-size: 12px;
 }
