@@ -1,0 +1,42 @@
+.contact-tile-container {
+    padding: 0 2px;
+}
+
+.contact-tile {
+    margin: 2px 0;
+    padding-top: 100%;
+    background-color: #0F243E;
+    transition: 250ms;
+}
+
+.contact-tile:hover {
+    background-color: #497DBA;
+}
+
+.contact-tile .contact-tile-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: 0 2px 50% 2px;
+    width: calc(100% - 4px);
+    transform: translateY(50%);
+    text-align: center;
+    color: #fff;
+    font-size: 100px;
+}
+
+.contact-tile .contact-tile-footer {
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    padding: 10px 0;
+    margin: 0 2px;
+    width: calc(100% - 4px);
+    text-align: center;
+    color: #0F243E;
+    transition: 250ms;
+}
+
+.contact-tile:hover > .contact-tile-footer {
+    color: #fff;
+}
