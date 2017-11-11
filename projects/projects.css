@@ -1,0 +1,10 @@
+.project {
+    margin: 5px;
+    border-bottom: 2px dotted #497DBA;
+}
+
+.project .technology {
+    padding: 3px;
+    color: #FFF;
+    background-color: #0F243E;
+}
