@@ -3,7 +3,9 @@
     border-bottom: 2px dotted #497DBA;
 }
 
-.project .technology {
+.project .technology span {
+    display: inline-block;
+    margin-top: 1px;
     padding: 3px;
     color: #FFF;
     background-color: #0F243E;
