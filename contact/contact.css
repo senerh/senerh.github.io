@@ -33,10 +33,10 @@
     margin: 0 2px;
     width: calc(100% - 4px);
     text-align: center;
-    color: #0F243E;
-    transition: 250ms;
+    color: #fff;
+    visibility: hidden;
 }
 
 .contact-tile:hover > .contact-tile-footer {
-    color: #fff;
+    visibility: visible;
 }
