@@ -51,7 +51,7 @@ footer {
     font-size: 20px;
     text-align: center;
     width: 100%;
-    background-image: url("../bg.png");
+    background-image: url(bg.png);
 }
 
 footer .fa-heart {
