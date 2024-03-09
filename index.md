@@ -7,17 +7,16 @@ title: "acceuil"
 
 ## Présentation
 
-My name is Hakan and I'm a junior software engineer.
+Je m'appelle Hakan et je suis développeur logiciel.
 
-I began to take an interest in programming at the age of 14.
-I started by learning the C language on [openclassrooms](https://openclassrooms.com/).
-Now, my favorite areas are algorithmic and web development.
-Apart from new technologies, I like playing soccer, reading mangas
-and playing video games.
+J'ai commencé à m'intérresser à la programmation à 14 ans en suivant le cours 
+d'[OpenClassrooms](https://openclassrooms.com/) sur le langage C.
+Mes expériences professionnelles mon amenées à me spécialiser dans le développement backend Java,
+mais je reste toujours partant pour apprendre de nouvelles technos !
 
-On this website, you can find some of my works which I've done on my personal time.
-I'll be very happy to receive your feedback, so don't hesitate to contact me.
+Sur ce site vous trouverez des articles sur le développement,
+ainsi que quelques projets marquants que j'ai réalisé sur mon temps personnel.
 
-<p class="lead">
-Enjoy your visit !
-</p>
+Je serai très heureux d'avoir vos retours, donc n'hésitez pas à me contacter !
+
+*Bonne visite !*
