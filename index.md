@@ -12,7 +12,7 @@ Je m'appelle Hakan et je suis développeur logiciel.
 J'ai commencé à m'intérresser à la programmation à 14 ans en suivant le cours 
 d'[OpenClassrooms](https://openclassrooms.com/) sur le langage C.
 Mes expériences professionnelles mon amenées à me spécialiser dans le développement backend Java,
-mais je reste toujours partant pour apprendre de nouvelles technos !
+mais je reste toujours partant pour programmer avec d'autres technos !
 
 Sur ce site vous trouverez des articles sur le développement,
 ainsi que quelques projets marquants que j'ai réalisé sur mon temps personnel.
