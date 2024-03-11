@@ -1,14 +1,12 @@
-<nav>
-    <div class="hse-container">
-        <div class="hse-brand">
-            <a href="/">Hakan Sener</a>
-        </div>
-        <ul>
-            {% for item in site.data.navigation %}
-            <li {% if page.url== item.link %}class="active" {% endif %}>
-                <a href="{{ item.link }}">{{ item.name }}</a>
-            </li>
-            {% endfor %}
-        </ul>
+<nav class="hse-container">
+    <div class="hse-brand">
+        <a href="/">Hakan Sener</a>
     </div>
+    <ul>
+        {% for item in site.data.navigation %}
+        <li {% if page.url== item.link %}class="active" {% endif %}>
+            <a href="{{ item.link }}">{{ item.name }}</a>
+        </li>
+        {% endfor %}
+    </ul>
 </nav>
