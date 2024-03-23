@@ -1,0 +1,24 @@
+---
+layout: default
+title: projets
+---
+<h1>{{ page.title | capitalize }}</h1>
+{% for project in site.projects %}
+<div class="project">
+    <div class="description">
+        <h2>{{ project.name }}</h2>
+        {{ project.content | markdownify }}
+        {% for tag in project.tags %}
+        <span class="tag">{{ tag }}</span>
+        {% endfor %}
+    </div>
+    <div class="thumbnails">
+        {% for thumbnail in project.thumbnails %}
+        <div class="thumbnail">
+            <img src="{{ "assets/projects/" | append: thumbnail | relative_url }}" alt="miniature du projet '{{
+            project.name }}'">
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}

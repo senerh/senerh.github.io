@@ -1,6 +1,5 @@
 ---
-layout: default
-title: "acceuil"
+title: acceuil
 ---
 
 # Hello world!
