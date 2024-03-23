@@ -1,7 +1,10 @@
 <nav class="container">
-    <div class="hse-brand">
-        <a href="/">Hakan Sener</a>
-    </div>
+    <a href="/">
+        <div class="logo">
+            <img src="{{ "/assets/logo.png" | relative_url }}" alt="logo">
+            Hakan Sener
+        </div>
+    </a>
     <ul>
         {% for item in site.data.navigation %}
         <li {% if page.url== item.link %}class="active" {% endif %}>

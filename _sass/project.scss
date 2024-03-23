@@ -1,29 +1,30 @@
 .project {
+    padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: 2px dotted #497DBA;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
-}
 
-.project .tag {
-    display: inline-block;
-    margin-top: 1px;
-    padding: 3px;
-    color: #FFF;
-    background-color: #0F243E;
-}
+    .tag {
+        display: inline-block;
+        margin-top: 1px;
+        padding: 3px;
+        color: #FFF;
+        background-color: #0F243E;
+    }
 
-.project .thumbnails {
-    display: flex;
-    gap: 1rem;
-}
+    .thumbnails {
+        display: flex;
+        gap: 1rem;
 
-.project .thumbnails .thumbnail {
-  flex: 1;
-}
+        .thumbnail {
+            flex: 1;
 
-.project .thumbnails .thumbnail img {
-    max-width: 100%;
-    height: auto;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
 }
