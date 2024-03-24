@@ -8,6 +8,8 @@ title: projets
     <div class="description">
         <h2>{{ project.name }}</h2>
         {{ project.content | markdownify }}
+    </div>
+    <div class="tags">
         {% for tag in project.tags %}
         <span class="tag">{{ tag }}</span>
         {% endfor %}

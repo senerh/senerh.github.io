@@ -1,3 +1,51 @@
+// https://getbootstrap.com/docs/4.6/layout/overview/
+$s-min-width: 576px;
+$m-min-width: 768px;
+$l-min-width: 992px;
+$xl-min-width: 1200px;
+
+$xs-max-width: $s-min-width - 1px;
+$s-max-width: $m-min-width - 1px;
+$m-max-width: $l-min-width - 1px;
+$l-max-width: $xl-min-width - 1px;
+
+// https://medium.com/codeartisan/breakpoints-and-media-queries-in-scss-46e8f551e2f2
+@mixin xs {
+   @media (max-width: #{$xs-max-width}) {
+       @content;
+   }
+}
+
+@mixin s {
+   @media (min-width: #{$s-min-width}) and (max-width: #{$s-max-width}) {
+       @content;
+   }
+}
+
+@mixin xs-s {
+   @media (max-width: #{$s-max-width}) {
+       @content;
+   }
+}
+
+@mixin m {
+   @media (min-width: #{$m-min-width}) and (max-width: #{$m-max-width}) {
+       @content;
+   }
+}
+
+@mixin l {
+   @media (min-width: #{$l-min-width}) and (max-width: #{$l-max-width}) {
+       @content;
+   }
+}
+
+@mixin xl {
+    @media (min-width: #{$xl-min-width}) {
+       @content;
+    }
+}
+
 body {
     margin: 0;
     padding-top: 50px;
@@ -38,6 +86,35 @@ a {
 a:focus, a:hover {
     color: #23527c;
     text-decoration: underline;
+}
+
+.container {
+    --container-padding: 15px;
+
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: calc(50% - var(--container-width) / 2);
+    padding-right: calc(50% - var(--container-width) / 2);
+
+    @include xs {
+        --container-width: calc(100% - var(--container-padding) * 2);
+    }
+
+    @include s {
+        --container-width: 540px;
+    }
+
+    @include m {
+        --container-width: 730px;
+    }
+
+    @include l {
+        --container-width: 960px;
+    }
+
+    @include xl {
+        --container-width: 1140px;
+    }
 }
 
 nav {
@@ -125,46 +202,52 @@ footer {
     }
 }
 
+.project {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 2px dotted #497DBA;
 
-:root {
-    --container-padding: 15px;
-    --container-width: calc(100% - var(--container-padding) * 2);
-}
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "description thumbnails"
+                         "tags thumbnails";
+    gap: 1rem;
 
-// https://getbootstrap.com/docs/4.6/layout/overview/
-.container {
-    box-sizing: border-box;
-    width: 100%;
-    padding-left: calc(50% - var(--container-width) / 2);
-    padding-right: calc(50% - var(--container-width) / 2);
-}
-
-@media only screen and (max-width: 576px) {
-    :root {
-        --container-width: calc(100% - var(--container-padding) * 2);
+    @include xs-s {
+        grid-template-columns: 1fr;
+        grid-template-areas: "description"
+                             "thumbnails"
+                             "tags";
     }
-}
 
-@media only screen and (min-width: 576px) {
-    :root {
-        --container-width: 540px;
+    .description {
+        grid-area: description;
     }
-}
 
-@media only screen and (min-width: 768px) {
-    :root {
-        --container-width: 730px;
+    .tags {
+        grid-area: tags;
     }
-}
 
-@media only screen and (min-width: 992px) {
-    :root {
-      --container-width: 960px;
+    .tag {
+        display: inline-block;
+        margin-top: 1px;
+        padding: 3px;
+        color: #FFF;
+        background-color: #0F243E;
     }
-}
 
-@media only screen and (min-width: 1200px) {
-    :root {
-        --container-width: 1140px;
+    .thumbnails {
+        grid-area: thumbnails;
+        display: flex;
+        gap: 1rem;
+
+        .thumbnail {
+            flex: 1;
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
     }
 }
