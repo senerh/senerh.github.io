@@ -203,25 +203,40 @@ footer {
 }
 
 .project {
-    margin-bottom: 20px;
-    padding-bottom: 20px;
+    --project-vertical-spacing: 1rem;
+    margin-bottom: var(--project-vertical-spacing);
+    padding-bottom: var(--project-vertical-spacing);
     border-bottom: 2px dotted #497DBA;
 
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr auto;
     grid-template-areas: "description thumbnails"
                          "tags thumbnails";
     gap: 1rem;
 
     @include xs-s {
         grid-template-columns: 1fr;
+        grid-template-rows: none;
         grid-template-areas: "description"
                              "thumbnails"
                              "tags";
     }
 
+    &:first-child {
+        margin-top: var(--project-vertical-spacing);
+    }
+
     .description {
         grid-area: description;
+
+        h2 {
+            display: inline-block;
+
+            &:after {
+                content: '\00A0';
+            }
+        }
     }
 
     .tags {
