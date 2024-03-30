@@ -7,10 +7,6 @@ tags:
   - youtube-mp3.org
 thumbnails:
   - youtube_mp3_1.png
-  - youtube_mp3_2.png
-  - youtube_mp3_3.png
-  - youtube_mp3_4.png
-  - youtube_mp3_5.png
   
 ---
-Youtube_MP3 est un programme qui permet à l'utilisateur de télécharger le son au format mp3 de n'importe quelle vidéo hébergée sur Youtube.
+**Youtube_MP3** est un programme qui permet à l'utilisateur de télécharger le son au format mp3 de n'importe quelle vidéo hébergée sur Youtube.
