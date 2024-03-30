@@ -232,10 +232,6 @@ footer {
 
         h2 {
             display: inline-block;
-
-            &:after {
-                content: '\00A0';
-            }
         }
     }
 
