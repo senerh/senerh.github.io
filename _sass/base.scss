@@ -198,13 +198,11 @@ footer {
     background-image: url("../bg.png");
 
     .fa-heart {
+        color: #E4312b;
         animation: fa-heart-animation 10s infinite;
     }
 
     @keyframes fa-heart-animation {
-        0% {
-            color: #E4312b;
-        }
         20% {
             color: #E4312b;
         }
