@@ -9,4 +9,4 @@ thumbnails:
   - solveur2.png
   - solveur4.png
 ---
-**SOLVEUR** est un programme permettant de trouver une solution d'une équation dans un intervalle de recherche.
+**SOLVEUR** est un programme de calculatrice TI-82 permettant de trouver une solution d'une équation dans un intervalle de recherche.
