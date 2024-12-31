@@ -53,7 +53,7 @@ languages:
     params:
       dateFormat: "2 January 2006"
       editPost:
-        URL: "https://gitlab.com/senerh/senerh.com/-/edit/main/content"
+        URL: "https://github.com/senerh/senerh.github.io/edit/main/content"
         Text: ":pencil: Modifier"
         appendFilePath: true
       profileMode:
