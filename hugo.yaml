@@ -1,4 +1,11 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
-theme: ["PaperMod"]
+baseURL: https://senerh.com/
+languageCode: fr-FR
+title: senerh
+theme: PaperMod
+defaultContentLanguage: fr
+enableEmoji: true
+
+params:
+  defaultTheme: auto # to switch between dark or light according to browser theme
+  disableThemeToggle: true
+  dateFormat: "2 January 2006"
