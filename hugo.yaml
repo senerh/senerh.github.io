@@ -21,6 +21,7 @@ params:
   ShowShareButtons: true
   ShowBreadCrumbs: false
   ShowRssButtonInSectionTermList: true
+  comments: true
   socialIcons:
     - name: linkedin
       title: LinkedIn
