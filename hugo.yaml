@@ -1,11 +1,67 @@
 baseURL: https://senerh.com/
-languageCode: fr-FR
-title: senerh
-theme: PaperMod
 defaultContentLanguage: fr
+languageCode: fr-FR
+title: senerh.com
+theme: [PaperMod]
 enableEmoji: true
 
+pagination:
+  pagerSize: 5
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 params:
-  defaultTheme: auto # to switch between dark or light according to browser theme
+  defaultTheme: auto
   disableThemeToggle: true
-  dateFormat: "2 January 2006"
+  ShowReadingTime: true
+  ShowShareButtons: true
+  ShowBreadCrumbs: false
+  ShowRssButtonInSectionTermList: true
+  socialIcons:
+    - name: linkedin
+      title: LinkedIn
+      url: "https://linkedin.com/in/senerh"
+    - name: stackoverflow
+      title: Stack Overflow
+      url: "https://stackoverflow.com/users/3813027/senerh"
+    - name: github
+      title: GitHub
+      url: "https://github.com/senerh"
+    - name: gitlab
+      title: GitLab
+      url: "https://gitlab.com/senerh"
+
+languages:
+  fr:
+    menu:
+      main:
+        - name: Rechercher
+          url: search/
+          weight: 10
+          identifier: search
+        - name: Articles
+          url: posts/
+          weight: 5
+        - name: Tags
+          url: tags/
+          weight: 5
+    params:
+      dateFormat: "2 January 2006"
+      editPost:
+        URL: "https://gitlab.com/senerh/senerh.com/-/edit/main/content"
+        Text: ":pencil: Modifier"
+        appendFilePath: true
+      profileMode:
+        enabled: true
+        title: "Bienvenue sur mon blog :wave:"
+        subtitle: "Ici vous trouverez des articles sur le développement, ainsi que quelques projets que j’ai réalisé sur mon temps personnel."
+        imageUrl: "/logo.png"
+        imageWidth: 120
+        imageHeight: 120
+        buttons:
+          - name: Parcourir les articles
+            url: "/posts"    
