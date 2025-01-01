@@ -60,7 +60,7 @@ languages:
         enabled: true
         title: "Bienvenue sur mon blog :wave:"
         subtitle: "Ici vous trouverez des articles sur le développement, ainsi que quelques projets que j’ai réalisé sur mon temps personnel."
-        imageUrl: "/logo.png"
+        imageUrl: "/photo.jpg"
         imageWidth: 120
         imageHeight: 120
         buttons:
