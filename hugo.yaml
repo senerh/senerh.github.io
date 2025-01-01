@@ -69,4 +69,4 @@ languages:
           - name: Parcourir les articles
             url: "/posts"
       footer:
-        text: "Free Palestine ![](/watermelon.svg) · [License Creative Commons](https://creativecommons.org/licenses/by-sa/4.0/) ![CC BY-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-sa.svg) · Hosted by [GitHub Pages](https://pages.github.com/)"
+        text: "Free Palestine ![watermelon](/watermelon.svg) · [License Creative Commons](https://creativecommons.org/licenses/by-sa/4.0/) ![CC BY-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-sa.svg) · Hosted by [GitHub Pages](https://pages.github.com/)"
