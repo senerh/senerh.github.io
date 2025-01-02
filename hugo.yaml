@@ -1,9 +1,10 @@
 baseURL: https://senerh.com/
 defaultContentLanguage: fr
 languageCode: fr-FR
-title: senerh.com
+title: Hakan Sener
 theme: [PaperMod]
 enableEmoji: true
+copyright: "[![CC BY-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-sa.svg)](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
 
 pagination:
   pagerSize: 5
@@ -22,8 +23,6 @@ params:
   ShowBreadCrumbs: false
   ShowRssButtonInSectionTermList: true
   comments: true
-  footer:
-    hideCopyright: true
   socialIcons:
     - name: linkedin
       title: LinkedIn
@@ -61,7 +60,7 @@ languages:
       profileMode:
         enabled: true
         title: "Bienvenue sur mon blog :wave:"
-        subtitle: "Ici vous trouverez des articles sur le développement, ainsi que quelques projets que j’ai réalisé sur mon temps personnel."
+        subtitle: "Ici vous trouverez des articles sur le développement logiciel ainsi que des projets réalisés sur mon temps libre."
         imageUrl: "/photo.jpg"
         imageWidth: 120
         imageHeight: 120
@@ -69,4 +68,4 @@ languages:
           - name: Parcourir les articles
             url: "/posts"
       footer:
-        text: "Free Palestine :watermelon: · [Creative Commons License](https://creativecommons.org/licenses/by-sa/4.0/) ![CC BY-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-sa.svg) · Hosted by [GitHub Pages](https://pages.github.com/)"
+        text: "Free Palestine :watermelon:"
