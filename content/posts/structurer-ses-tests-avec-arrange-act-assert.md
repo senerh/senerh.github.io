@@ -1,22 +1,22 @@
 ---
-date: '2025-01-03T14:55:46+01:00'
+date: '2025-01-03'
+draft: true
 title: 'Structurer ses tests avec Arrange-Act-Assert'
 tags: ["java", "test"]
 ---
 ## Introduction
 
-[Dans mon précédent article] ( {{< ref "posts/nommer-ses-tests-avec-should_when" >}}), j'ai expliqué comment nommer correctement ses tests. Ici, je vais expliquer comment écrire ses tests avec le pattern **Arrange-Act-Assert**, un pattern très répandu dans le monde du développement logiciel.
+[Dans mon précédent article]({{<ref "posts/nommer-ses-tests-avec-should_when">}}), j'ai expliqué comment nommer correctement ses tests. Ici, je vais vous présenter **Arrange-Act-Assert**, un pattern cette fois ci très répandu qui permet de structurer ses tests.
 
 ## Le pattern Arrange-Act-Assert
 
-Le principe est simple : le test est séparé en trois parties (Arrange, Act et Assert) et chacune de ses parties a sa propre responsabilité. Cela permet au final d'avoir un test lisible et bien structuré. 
+Le principe consiste à découper le test en trois parties (Arrange, Act et Assert). Chacunes des parties ayant sa propre responsabilité, cela permet d'obtenir un code lisible et bien structuré. 
 
 ### 1. Arrange
 
 > Prépare le contexte nécessaire à l'exécution du test.
 
-S'il y a des mocks à mettre en place, des variables à initialiser, c'est ici que ça se passe. À la fin de cette partie, nous sommes prêt à lancer le test. C'est en théorie la partie la plus compliquée dans l'écriture du test.
-On peut utiliser Mockito.
+C'est à mon avis la partie la plus difficile à écrire. Il faut initialiser l'ensemble des variables nécessaires à l'exécution du test. Parfois cela peut nesséciter la mise en place de mocks ou le démarrage de composants techniques selon la compléxité du scénario testé. On privilégie donc les "petits" scénarios car ils sont logiquement plus simples à tester que les scénarios évolués.
 
 ### 2. Act
 
@@ -71,4 +71,4 @@ On remarque que les trois parties sont clairement identifiées à l'aide des com
 
 ## Conclusion
 
-Le pattern **Arrange-Act-Assert** permet donc d'écrire des test lisible et bien structurés. C'est un pattern très répandu que l'on retrouve aussi sous le nom de **Given-When-Then**. Si vous ne connaissiez pas déjà, vous devriez vraiment l'essayer !
+Le pattern **Arrange-Act-Assert** permet donc d'écrire des tests lisibles et bien structurés. C'est un pattern très répandu que l'on retrouve aussi sous le nom de **Given-When-Then**. Si vous ne connaissiez pas déjà, vous devriez vraiment l'essayer !
