@@ -2,7 +2,7 @@
 date: '2024-12-28T21:42:46+01:00'
 draft: false
 title: 'Nommer ses tests avec should_when'
-tags: ["java", "test", "should_when"]
+tags: ["java", "test"]
 ---
 ## Introduction
 
