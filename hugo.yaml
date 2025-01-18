@@ -1,4 +1,74 @@
-baseURL: https://example.org/
-languageCode: en-us
-title: My New Hugo Site
-theme: ["PaperMod"]
+baseURL: https://senerh.com/
+defaultContentLanguage: fr
+languageCode: fr-FR
+title: Hakan Sener
+theme: [PaperMod]
+enableEmoji: true
+copyright: "[![CC BY-SA 4.0](https://mirrors.creativecommons.org/presskit/buttons/80x15/svg/by-sa.svg)](https://creativecommons.org/licenses/by-sa/4.0/deed.fr)"
+
+pagination:
+  pagerSize: 5
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+params:
+  defaultTheme: auto
+  disableThemeToggle: true
+  ShowReadingTime: false
+  ShowShareButtons: true
+  ShowBreadCrumbs: false
+  ShowRssButtonInSectionTermList: true
+  comments: true
+  label:
+    icon: "logo.svg"
+  socialIcons:
+    - name: linkedin
+      title: LinkedIn
+      url: "https://linkedin.com/in/senerh"
+    - name: bluesky
+      title: Bluesky
+      url: "https://bsky.app/profile/senerh.com"
+    - name: github
+      title: GitHub
+      url: "https://github.com/senerh"
+    - name: gitlab
+      title: GitLab
+      url: "https://gitlab.com/senerh"
+    - name: stackoverflow
+      title: Stack Overflow
+      url: "https://stackoverflow.com/users/3813027/senerh"
+
+languages:
+  fr:
+    menu:
+      main:
+        - name: Rechercher
+          url: search/
+          weight: 10
+          identifier: search
+        - name: Articles
+          url: posts/
+          weight: 5
+        - name: Tags
+          url: tags/
+          weight: 5
+    params:
+      dateFormat: "2 January 2006"
+      editPost:
+        URL: "https://github.com/senerh/senerh.github.io/edit/main/content"
+        Text: ":pencil: Suggérer une modification"
+        appendFilePath: true
+      profileMode:
+        enabled: true
+        imageUrl: "/logo.svg"
+        imageWidth: 120
+        imageHeight: 120
+        buttons:
+          - name: Parcourir les articles
+            url: "/posts"
+      footer:
+        text: "Free Palestine :watermelon:"
