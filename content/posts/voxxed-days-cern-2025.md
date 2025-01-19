@@ -39,10 +39,9 @@ Stephan Janssen et Alfonso² Peterssen ont parlé de la nouvelle ère de l'AAP. 
 
 Paco van Beckhoven parle de plusieurs points pour améliorer les code reviews.
 
-### Les tests de mutations
+### Les tests de mutation
 
-Dave Aronson
-
+De retour avec Dave Aronson[^1] qui nous parle cette fois-ci des tests de mutation. J'avais envie d'assister à cette conférence car j'ai moi-même présenté ce sujet la veille dans le cadre de mon travail ! Heureusement pour moi, pas de surprise pendant la présentation. Je compte écrire un article à part entière sur le sujet, mais pour ceux que ça intéresse vous trouverez une expliquation [ici]().
 
 ### Les bases du développement sécurisé en Java
 
