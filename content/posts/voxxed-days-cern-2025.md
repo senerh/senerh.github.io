@@ -1,17 +1,19 @@
 ---
 draft: true
-date: '2025-01-18'
-title: 'Voxxed Days CERN 2025'
+date: "2025-01-18"
+title: "Voxxed Days CERN 2025"
 cover:
   image: /images/voxxed-days-cern-2025.png
   caption: "Source : [cern.voxxeddays.com](https://cern.voxxeddays.com/)"
 tags: ["conférence"]
 ---
+
 Cette année j'ai eu la chance de participer à la 4ᵉ édition des Voxxed Days CERN. Je vous partage ici quelques notes sur les conférences auxquelles j'ai assisté, ainsi que mes impressions sur cette journée.
 
 ### La qualité logicielle avec ACRUMEN
 
 Pour cette première conférence, Dave Aronson[^1] a présenté sa définition de la qualité logicielle à travers le mot **ACRUMEN**[^2]. L'accronyme fonctionne aussi en français alors profitons-en :
+
 - **A**pproprié : répond aux besoins du client
 - **C**orrect : fonctionne comme attendu
 - **R**obuste : difficile à faire dysfonctionner
@@ -27,7 +29,17 @@ Je trouve que l'idée de distinguer 6 critères pour évaluer la qualité d'un l
 
 ### Conteneuriser une application Java
 
-Matthias Haeussler[^3] a présenté plusieurs solutions qui permettent de construire des images docker pour nos applications Java.
+Il existe plusieurs manière de construire une image docker pour une application java. Matthias Haeussler[^3] en a présenté plsuieurs qu'on peut résumer dans un tableau :
+
+|  | Dockerfile (simple) | Dockerfile (multistage) | Dockerfile (jlink/jdeps) | Jib | Buildpacks/Paketo |
+| --- | :-: | :-: | :-: | :-: | :-: |
+| Rapidité | | | | :star_struck: | |
+| Taille | | | :star_struck: | | |
+| Structure | | :slightly_smiling_face: | :slightly_smiling_face: | :star_struck: | :star_struck: |
+| Standardisation | | :slightly_smiling_face: | :slightly_smiling_face: | :slightly_smiling_face: | :star_struck: |
+| Simplicité | :slightly_smiling_face: | | | :star_struck: | :slightly_smiling_face: |
+| Sécurité | | :slightly_smiling_face: | :star_struck: | | :slightly_smiling_face: |
+
 
 [^3]: Retrouvez Matthias Haeussler sur [Bluesky](https://bsky.app/profile/maeddes.bsky.social).
 
@@ -62,4 +74,3 @@ Ce qu'est une équipe plateforme, ce qu'elle propose comme service, les outils s
 Álvaro Sánchez-Mariscal Arnaiz
 
 Pourquoi il ne faut pas utiliser Lombok
-
