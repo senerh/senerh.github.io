@@ -3,6 +3,7 @@ date: '2025-11-09'
 title: 'select for update avec Oracle'
 tags: ["oracle"]
 ---
+
 Le **select for update** est une solution *normalement* simple à mettre en place. Ici je vais expliquer comment implémenter cette solution avec Oracle.
 Nous allons expliquer comment implémenter cette solution avec Oracle.
 
@@ -12,14 +13,27 @@ schéma + explications
 
 ## Avec Oracle
 
+| ID  | NAME    | STATUS |
+| --- | ------- | ------ |
+| `1` | `Job 1` | `TODO` |
+
 On prend une requête classique avec ROWNUM < 1
 
 Résultat avec 2 transactions
 
-| Transaction 1 | Transaction 2 |
-| ------------- | ------------- |
-| Cell 1, Row 1 | Cell 2, Row 1 |
-| Cell 1, Row 2 | Cell 1, Row 2 |
+|        | Transaction 1  | Transaction 2 |
+| -      | -------------: | ------------: |
+| **ID** | `1`            | -             |
+
+Résultat avec 2 transactions
+
+|        | Transaction 1  | Transaction 2 |
+| ------ | -------------: | ------------: |
+| **ID** | `1`            | `11`          |
+
+|        | Transaction 1  | Transaction 2 |
+| ------ | -------------: | ------------: |
+| **ID** | `1`            | `2`           |
 
 On ajoute le for update.
 La fonctionnalité existe avec Oracle. Il suffit d'ajouter les mots-clés FOR UPDATE SKIP LOCKED à la fin de la requête.
